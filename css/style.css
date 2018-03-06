@@ -12,11 +12,19 @@ body
     line-height: 1.6;
     letter-spacing: .1em;
     color: #4c4c4c;
-    background-color: #fdfcf6;
+    background-color: #f9f8f6
 }
 
 a
 {
     text-decoration: none;
     color: #ff9a00;
+}
+
+/* header
+-----------------------------------------------------------------*/
+/* PC版のメニュー */
+.pc_navi_li {
+    display:flex;
+    list-style:none;
 }
