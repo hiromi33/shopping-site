@@ -27,4 +27,19 @@ a
 .pc_navi_li {
     display:flex;
     list-style:none;
+    
+}
+.pc_navi_li li {
+    margin-left:15px;
+}
+ .sp_navi{
+     display:none;
+ }
+
+.logo{
+    margin-top:20px;
+}
+
+.menu{
+    margin-top:40px;
 }
