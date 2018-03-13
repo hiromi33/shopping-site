@@ -43,3 +43,21 @@ a
 .menu{
     margin-top:40px;
 }
+
+
+/* メインコンテンツ
+-----------------------------------------------------------------*/
+/* カルーセル */
+.owl-theme .owl-dots {
+    text-align: left;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 30px; /* バーの幅 */
+    height: 5px; /* バーの高さ */
+    border-radius: 0;
+    background: #333; /* バーの色 */
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #f00; /* バーの赤い色 */
+}
