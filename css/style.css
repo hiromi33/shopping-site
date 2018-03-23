@@ -16,6 +16,7 @@ body
 }
 
 a
+
 {
     text-decoration: none;
     color: #ff9a00;
@@ -52,14 +53,15 @@ a
     text-align: left;
 }
 .owl-theme .owl-dots .owl-dot span {
-    width: 30px; /* バーの幅 */
-    height: 5px; /* バーの高さ */
+    width: 40px; /* バーの幅 */
+    height: 3px; /* バーの高さ */
     border-radius: 0;
-    background: #333; /* バーの色 */
+    background: #aaaaaa; /* バーの色 */
+    margin-left:0px;
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #f00; /* バーの赤い色 */
+    background: #9d1a2d; /* バーの赤い色 */
 }
 
 /* 商品リスト */
@@ -70,10 +72,36 @@ a
 .item-box{
     background-color:#fff;
     padding:10px;
-    
-    
+    margin-right:5px;
+    margin-bottom:5px;
+    width: calc(100% / 3 - 30px);
 }
 .item-box p{
     font-size:1.1rem;
     
+}
+
+/* ショッピングガイド */
+
+
+/* フッター
+-----------------------------------------------------------------*/
+footer .copy {
+    text-align: center;
+    font-size: 11px;
+    font-size: 1.1rem;
+    color:#e9e7e3;
+}
+    
+.footer-copy{
+    text-align: center;
+    border-top:1px solid #E2ddd4;
+    padding-top:20px;
+    color:#3e3d3d;
+    font-size:1.1rem;
+}
+
+.pagetop{
+    text-align: right;
+    margin-bottom:20px;
 }
