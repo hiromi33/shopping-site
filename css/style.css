@@ -82,7 +82,49 @@ a
 }
 
 /* ショッピングガイド */
+.guide-container{
+    display:flex;
+}
 
+.guide-box{
+    background-color:#fff;
+    padding:10px;
+    margin-right:5px;
+    margin-bottom:5px;
+    width: calc(100% / 2 - 30px);
+}
+
+.guide-box h3{
+    font-size:1.6rem;
+    color:#887f69;
+    font-weight:bold;
+}
+
+.guide-box h4{
+    font-size:1.2rem;
+    color:#887f69;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.guide-box p{
+    margin-bottom:5px;
+    font-size:1.2rem;
+}
+
+/* サイドバー
+-----------------------------------------------------------------*/
+/* 検索ボックス */
+.search{
+    background-color:#fff;
+    padding:15px;
+}
+.search input{
+    background-color:#eee;
+    background-image:url(../images/top/search_icon.png);
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+    
+}
 
 /* フッター
 -----------------------------------------------------------------*/
