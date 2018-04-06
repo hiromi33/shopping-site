@@ -22,6 +22,9 @@ a
     color: #ff9a00;
 }
 
+img{
+    max-width:100%;
+}
 /* header
 -----------------------------------------------------------------*/
 /* PC版のメニュー */
@@ -118,12 +121,107 @@ a
     background-color:#fff;
     padding:15px;
 }
+.search h2{
+    font-size:0;
+    margin-bottom:10px;
+}
 .search input{
     background-color:#eee;
     background-image:url(../images/top/search_icon.png);
     background-repeat:no-repeat;
     background-position:right 10px center;
+    margin:0;
+    border:none;
+    border-radius:0;
+    width:100%;
+}
+
+/* リンクボックス */
+.link{
+    background-color:#887f69;
+    padding:20px 10px;
+    margin:10px 0px;
+    background-image:url(../images/top/next_icon.png);
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+}
+
+.link h2{
+    font-size:0;
+    margin:0;
+
+}
+/* カテゴリーボックス */
+.categories{
+    background-color:#887f69;
+    margin-top:10px;
+    margin-bottom:0;
+    padding:20px 10px;
+    background-image:url(../images/top/down_icon.png);
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+}
+
+.categories h2{
+    font-size:0;
+    margin:0;
+}
+
+.category-list{
+    background-color:#fff;
+}
+
+.category-list li{
+    padding:15px;
+    background-image:url(../images/top/next_icon_gray.png);
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+    margin:0;
+    list-style:none;
+    border-bottom:1px solid #f9f8f6;
+}
+
+/* アバウトボックス */
+.about{
+    background-color:#887f69;
+    margin-top:10px;
+    margin-bottom:0;
+    padding:20px 10px;
     
+}
+
+.about h2{
+    font-size:0;
+    margin:0;
+}
+
+.about-box{
+    background-color:#fff;
+    padding:15px;
+}
+
+.about-box p{
+    font-size:1.2rem;
+}
+
+.more-button{
+    margin:0 auto;
+    display:block;
+}
+
+
+
+/* ショップインフォボックス */
+.shop_info{
+    background-color:#887f69;
+    margin-top:10px;
+    margin-bottom:0;
+    padding:20px 10px;
+}
+
+.shop_info h2{
+    font-size:0;
+    margin:0;
 }
 
 /* フッター
