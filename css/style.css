@@ -31,7 +31,7 @@ img{
 .pc_navi_li {
     display:flex;
     list-style:none;
-    
+    justify-content: flex-end; /* 右端に揃える */
 }
 .pc_navi_li li {
     margin-left:15px;
@@ -48,6 +48,32 @@ img{
     margin-top:40px;
 }
 
+/* SP版のメニュー */
+@media (max-width: 550px) {
+    .pc_navi{
+      display: none;
+    }
+    .sp_navi{
+        display:block;
+    }
+    .sp_small_navi{
+        display:none;
+    }
+    .sp_navi_li{
+        display:flex;
+        justify-content: center; /* 中央揃え */
+        list-style:none;
+    }
+    .sp_navi_li li{
+        margin:0px 5px;
+    }
+    .logo{
+        text-align: center;
+    }
+    .menu{
+    margin-top:0px;
+}
+}
 
 /* メインコンテンツ
 -----------------------------------------------------------------*/
@@ -81,8 +107,16 @@ img{
 }
 .item-box p{
     font-size:1.1rem;
-    
+    margin-bottom:10px;
 }
+/* SP版の商品リスト */
+@media (max-width: 550px) {
+.item-box{
+    width: calc(100% / 2 - 30px);
+}    
+}
+
+
 
 /* ショッピングガイド */
 .guide-container{
@@ -113,6 +147,33 @@ img{
     margin-bottom:5px;
     font-size:1.2rem;
 }
+
+/* SP版のショッピングガイド */
+@media (max-width: 550px) {
+    .guide-container{
+        flex-direction:column;
+    }
+    .guide-box{
+    width: calc(100% - 30px);
+    }
+}
+
+
+/* 見出し */
+.sptitle{
+    display:none;
+}
+@media (max-width: 550px) {
+    .pctitle{
+        display:none;
+    }
+    .sptitle {
+        display: block;
+        margin: 20px auto 0;
+        
+    }
+}
+
 
 /* サイドバー
 -----------------------------------------------------------------*/
@@ -209,6 +270,18 @@ img{
     display:block;
 }
 
+/* SP版アバウトボックス */
+@media (max-width: 550px) {
+    .about-box{
+        display:flex;
+        align-items: flex-start;
+    }
+    .spaboutleft{
+        width:50%;
+        margin-right:20px;
+    }
+}
+
 
 
 /* ショップインフォボックス */
@@ -244,4 +317,16 @@ footer .copy {
 .pagetop{
     text-align: right;
     margin-bottom:20px;
+}
+
+
+/* list.html
+-----------------------------------------------------------------*/
+/* パンくずリスト */
+.pankuzu{
+    background-color: #e8e4da;
+    padding:10px;
+}
+.pankuzu p {
+    margin: 0;
 }
