@@ -326,7 +326,25 @@ footer .copy {
 .pankuzu{
     background-color: #e8e4da;
     padding:10px;
+    border-radius: 3px;
+    font-size:1.1rem;
+    color:#9a927e;
+    margin-bottom:10px;
 }
 .pankuzu p {
     margin: 0;
+}
+
+/* BACK/NEXT ボタン */
+.list-btn{
+    margin:20px 0px;
+    display:flex;
+    justify-content: space-between; /* 要素を両端に揃える */
+}
+.list-btn a{
+    background-color:#887f69;
+    color:#fff;
+    font-size:1.4rem;
+    padding:10px 40px;
+    display: inline-block;
 }
